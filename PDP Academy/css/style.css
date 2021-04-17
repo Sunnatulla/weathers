@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(103,95,237);
+    background: linear-gradient(45deg, rgba(103,95,237,1) 0%, rgba(0,212,255,1) 63%, rgba(6,6,207,1) 100%);
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* part header */
+.header{
+    padding: 20px 0 0 20px;
+}
+
+.header__country{
+    font-size: 50px;
+    color: white;
+}
+
+.header__dateOfWeather{
+    font-size: 20px;
+    color: white;
+}
+
+/* part section */
+
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section__svgImg{
+    padding: 10px 0 0 50px;
+}
+
+.section__tempAmount{
+    padding: 30px 10px 0 150px;
+    font-size: 100px;
+    color: white;
+}
+
+.section__tempOfName{
+    padding: 0 10px 0 150px;
+    font-size: 20px;
+    color: white;
+}
+
+.section__temp::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: white;
+}
+
+.section__highLowerBlock1,
+.section__highLowerBlock2,
+.section__weatherOfNameBlock1,
+.section__weatherOfNameBlock2,
+.section__clockTimeBlock1,
+.section__clockTimeBlock2{
+    padding: 25px;
+}
+
+.section__highLowerBlock1Temp,
+.section__highLowerBlock2Temp,
+.section__weatherOfNameBlock1WindCount, 
+.section__weatherOfNameBlock2Percent, 
+.section__clockTimeBlock1Time,
+.section__clockTimeBlock2Time{
+    font-size: 30px;
+    color: white;
+}
+
+.section__highLowerBlock1High,
+.section__highLowerBlock2Low,
+.section__weatherOfNameBlock1Wind,
+.section__weatherOfNameBlock2Rain,
+.section__clockTimeBlock1TimeOfDay,
+.section__clockTimeBlock2TimeOfDay{
+    font-size: 20px;
+    color: grey;
+} 
+
+/* main */
+
+.main__block1_TodayWeather ,
+.footer__block1_nextWeather{
+    font-size: 30px;
+    color: rgb(192, 189, 189);
+}
+
+.main__block2{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.main__block2 .blackWindowOpacity{
+    background: rgba(66, 66, 66, 0.432);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.main__block2 .blackWindowOpacity p{
+    font-size: 25px;
+    color: white;
+}
+
+/* footer */
+
+.blackWindowOpacity2{
+    background: rgba(66, 66, 66, 0.432);
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__block2_dayOfName,
+.footer__block2_temp,
+.footer__block2_temp2,
+.main__block2_rainPercent,
+.main__block2_windCount{
+    font-size: 20px;
+    color: white;
+}
+
+.footer__block2_date,
+.footer__block2_low,
+.footer__block2_high,
+.main__block2_nameRain,
+.main__block2_nameWind{
+    font-size: 20px;
+    color: rgb(158, 157, 157);
+}
+
+@media (max-width: 970px) {
+    .main__block2 .blackWindowOpacity {
+        background: rgba(66, 66, 66, 0.432);
+        padding: 35px;
+        border-radius: 10px;
+    }
+    .main__block2 .blackWindowOpacity p {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media (max-width: 870px) {
+    .main__block2 .blackWindowOpacity {
+        background: rgba(66, 66, 66, 0.432);
+        padding: 30px;
+        border-radius: 10px;
+    }
+    .main__block2 .blackWindowOpacity p {
+        font-size: 18px;
+        color: white;
+    }
+}
+
+@media (max-width: 800px) {
+
+    
+    .main{
+        display: none;
+    }
+}

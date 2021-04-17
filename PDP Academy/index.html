@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header section -->
+        <header class="header">
+            <p class="header__country">London, UK</p>
+            <p class="header__dateOfWeather">Sunday 4th August</p>
+        </header>
+        <!-- section -->
+        <section class="section">
+
+            <div class="section__svgImg"><img src="./img/mostly-sunny (1).svg" alt="loading..." width="350%"></div>
+
+            <div class="section__temp">
+                <p class="section__tempAmount">21°</p>
+                <p class="section__tempOfName">Mostly Sunny</p>
+            </div>
+
+            <div class="section__highLower">
+
+                <div class="section__highLowerBlock1">
+                    <p class="section__highLowerBlock1Temp">23°</p>
+                    <p class="section__highLowerBlock1High">High</p>
+                </div>
+
+                <div class="section__highLowerBlock2">
+                    <p class="section__highLowerBlock2Temp">14°</p>
+                    <p class="section__highLowerBlock2Low">Low</p>
+                </div>
+
+            </div>
+
+            <div class="section__weatherOfName">
+
+                <div class="section__weatherOfNameBlock1">
+                    <p class="section__weatherOfNameBlock1WindCount">7mph</p>
+                    <p class="section__weatherOfNameBlock1Wind">Wind</p>
+                </div>
+
+                <div class="section__weatherOfNameBlock2">
+                    <p class="section__weatherOfNameBlock2Percent">0%</p>
+                    <p class="section__weatherOfNameBlock2Rain">Rain</p>
+                </div>
+
+            </div>
+            <div class="section__clockTime">
+
+                <div class="section__clockTimeBlock1">
+                    <p class="section__clockTimeBlock1Time">05:27</p>
+                    <p class="section__clockTimeBlock1TimeOfDay">Sunrise</p>
+                </div>
+
+                <div class="section__clockTimeBlock2">
+                    <p class="section__clockTimeBlock2Time">05:27</p>
+                    <p class="section__clockTimeBlock2TimeOfDay">Sunrise</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- main -->
+        <main class="main">
+            <div class="main__block1">
+                <p class="main__block1_TodayWeather">Today's weather</p>
+            </div>
+
+            <div class="main__block2">
+                <div data-aos="fade-up" data-aos-duration="10000" class="blackWindowOpacity">
+                    <p>3 am</p>
+                    <img src="./img/mostly-sunny (1).svg" alt="">
+                    <p>14°</p>
+                </div>
+                <div data-aos="fade-up" transition-duration="1s" class="blackWindowOpacity">
+                    <p>6 am</p>
+                    <img src="./img/mostly-sunny (1).svg" alt="">
+                    <p>16°</p>
+                </div>
+                <div data-aos="fade-up" duration="0.5" class="blackWindowOpacity">
+                    <p>9 am</p>
+                    <img src="./img/mostly-sunny (1).svg" alt="">
+                    <p>17°</p>
+                </div>
+                <div data-aos="fade-up" duration="0.5" class="blackWindowOpacity">
+                    <p>12 pm</p>
+                    <img src="./img/mostly-sunny (1).svg" alt="">
+                    <p>19°</p>
+                </div>
+                <div data-aos="fade-up" duration="0.5" class="blackWindowOpacity">
+                    <p>3 pm</p>
+                    <img src="./img/sunny.svg" alt="">
+                    <p>21°</p>
+                </div>
+                <div data-aos="fade-up" duration="0.5" class="blackWindowOpacity">
+                    <p>6 pm</p>
+                    <img src="./img/sunny.svg" alt="">
+                    <p>20°</p>
+                </div>
+                <div data-aos="fade-up" duration="0.5" class="blackWindowOpacity">
+                    <p>9 pm</p>
+                    <img src="./img/mostly-sunny (1).svg" alt="">
+                    <p>18°</p>
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__block1">
+                <p class="footer__block1_nextWeather">Next 5 days</p>
+            </div>
+
+            <div class="footer__block2">
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp2">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+                <div class="blackWindowOpacity2">
+                    <div class="footer__block2_day">
+                        <p class="footer__block2_dayOfName">Mon</p>
+                        <p class="footer__block2_date">30/7</p>
+                    </div>
+                    <div class="footer__block2_img"><img src="./img/sunny.svg" alt=""></div>
+                    <div class="footer__block2_lower">
+                        <p class="footer__block2_temp">10°</p>
+                        <p class="footer__block2_low">Low</p>
+                    </div>
+                    <div class="footer__block2_higher">
+                        <p class="footer__block2_temp">21°</p>
+                        <p class="footer__block2_high">High</p>
+                    </div>
+                    <div class="main__block2_rain">
+                        <p class="main__block2_rainPercent">0%</p>
+                        <p class="main__block2_nameRain">Rain</p>
+                    </div>
+                    <div class="main__block2_wind">
+                        <p class="main__block2_windCount">12mph</p>
+                        <p class="main__block2_nameWind">Wind</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
